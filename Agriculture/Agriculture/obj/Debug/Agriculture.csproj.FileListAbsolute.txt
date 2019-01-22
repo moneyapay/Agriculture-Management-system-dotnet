@@ -1,0 +1,164 @@
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\ApplicationInsights.config
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\csc.exe
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\System.Collections.Immutable.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\vbc.exe
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\VBCSCompiler.exe
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\roslyn\VBCSCompiler.exe.config
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Agriculture.dll.config
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Agriculture.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Agriculture.pdb
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Antlr3.Runtime.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\EntityFramework.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\EntityFramework.SqlServer.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.Web.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.WindowsServer.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.ApplicationInsights.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Google.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Web.Infrastructure.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Newtonsoft.Json.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Owin.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Helpers.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Mvc.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Optimization.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Razor.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.Deployment.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.Razor.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\WebGrease.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.Web.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AI.WindowsServer.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.ApplicationInsights.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Helpers.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Mvc.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Optimization.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.Razor.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.Deployment.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\System.Web.WebPages.Razor.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Antlr3.Runtime.pdb
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Newtonsoft.Json.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\EntityFramework.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\EntityFramework.SqlServer.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Google.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\obj\Debug\Agriculture.csprojResolveAssemblyReference.cache
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\obj\Debug\Agriculture.dll
+c:\users\goutham\documents\visual studio 2015\Projects\Agriculture\Agriculture\obj\Debug\Agriculture.pdb
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\ApplicationInsights.config
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\csc.exe
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\vbc.exe
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Agriculture.dll.config
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Agriculture.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Agriculture.pdb
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Antlr3.Runtime.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\EntityFramework.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\EntityFramework.SqlServer.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.Web.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.WindowsServer.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Google.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Newtonsoft.Json.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Owin.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Helpers.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Mvc.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Optimization.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Razor.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\WebGrease.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.Web.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AI.WindowsServer.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Helpers.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Mvc.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Optimization.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.Razor.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Antlr3.Runtime.pdb
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Newtonsoft.Json.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\EntityFramework.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\EntityFramework.SqlServer.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Google.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\obj\Debug\Agriculture.csprojResolveAssemblyReference.cache
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\obj\Debug\Agriculture.dll
+E:\Projects\Dot Net\Agriculture\Agriculture\Agriculture\obj\Debug\Agriculture.pdb

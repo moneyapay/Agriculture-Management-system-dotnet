@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A12EE8F2-C541-4C3E-9E0C-154BFE20E8B2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agriculture</RootNamespace>
+    <AssemblyName>Agriculture</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminFertilizerController.cs" />
+    <Compile Include="Controllers\AdminFertilizerOrderViewController.cs" />
+    <Compile Include="Controllers\AdminMachineController.cs" />
+    <Compile Include="Controllers\AdminMachineOrderViewController.cs" />
+    <Compile Include="Controllers\AdminPestisideOrderViewController.cs" />
+    <Compile Include="Controllers\AdminSeedOrderViewController.cs" />
+    <Compile Include="Controllers\AdminPestisideController.cs" />
+    <Compile Include="Controllers\AdminSeedController.cs" />
+    <Compile Include="Controllers\BuyFertilizersController.cs" />
+    <Compile Include="Controllers\BuyMachinesController.cs" />
+    <Compile Include="Controllers\BuyPestisidesController.cs" />
+    <Compile Include="Controllers\BuySeedsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserFertilizerController.cs" />
+    <Compile Include="Controllers\UserMachineController.cs" />
+    <Compile Include="Controllers\UserPestisideController.cs" />
+    <Compile Include="Controllers\UserSeedController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddFertilizer.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddFertilizer.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddFertilizer.cs">
+      <DependentUpon>AddFertilizer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddFertilizer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddFertilizer.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddFertilizer1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddFertilizer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddMachine.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddMachine.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddMachine.cs">
+      <DependentUpon>AddMachine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddMachine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddMachine.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddMachine1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddMachine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddPestiside.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddPestiside.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddPestiside.cs">
+      <DependentUpon>AddPestiside.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddPestiside.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddPestiside.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddPestiside1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddPestiside.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddSeed.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddSeed.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddSeed.cs">
+      <DependentUpon>AddSeed.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddSeed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddSeed.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddSeed1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddSeed.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyFertilizer.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyFertilizer.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyFertilizer.cs">
+      <DependentUpon>BuyFertilizer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyFertilizer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyFertilizer.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyFertilizer1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyFertilizer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyMachine.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyMachine.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyMachine.cs">
+      <DependentUpon>BuyMachine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyMachine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyMachine.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyMachine1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyMachine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyPestiside.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyPestiside.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyPestiside.cs">
+      <DependentUpon>BuyPestiside.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyPestiside.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyPestiside.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuyPestiside1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyPestiside.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuySeed.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuySeed.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuySeed.cs">
+      <DependentUpon>BuySeed.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuySeed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuySeed.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuySeed1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuySeed.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\User.cs">
+      <DependentUpon>DbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\c1.jpg" />
+    <Content Include="Images\c111111.jpg" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\download1.jpg" />
+    <Content Include="Images\drip1.jpg" />
+    <Content Include="Images\drip2.jpg" />
+    <Content Include="Images\egg.jpg" />
+    <Content Include="Images\far.jpg" />
+    <Content Include="Images\ffff.jpg" />
+    <Content Include="Images\g.jpg" />
+    <Content Include="Images\g1.jpg" />
+    <Content Include="Images\i1.jpg" />
+    <Content Include="Images\i3.jpg" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\mmm.jpg" />
+    <Content Include="Images\pppp.jpg" />
+    <Content Include="Images\s1.jpg" />
+    <Content Include="Images\s111.jpg" />
+    <Content Include="Images\s2.jpg" />
+    <Content Include="Images\s3.jpg" />
+    <Content Include="Images\s4.jpg" />
+    <Content Include="Images\Ssss.jpg" />
+    <Content Include="Models\AddFertilizer.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddFertilizer.edmx</DependentUpon>
+      <LastGenOutput>AddFertilizer.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddFertilizer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddFertilizer.edmx</DependentUpon>
+      <LastGenOutput>AddFertilizer1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddMachine.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddMachine.edmx</DependentUpon>
+      <LastGenOutput>AddMachine.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddMachine.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddMachine.edmx</DependentUpon>
+      <LastGenOutput>AddMachine1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddPestiside.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddPestiside.edmx</DependentUpon>
+      <LastGenOutput>AddPestiside.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddPestiside.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddPestiside.edmx</DependentUpon>
+      <LastGenOutput>AddPestiside1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddSeed.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddSeed.edmx</DependentUpon>
+      <LastGenOutput>AddSeed.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AddSeed.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AddSeed.edmx</DependentUpon>
+      <LastGenOutput>AddSeed1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyFertilizer.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyFertilizer.edmx</DependentUpon>
+      <LastGenOutput>BuyFertilizer.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyFertilizer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyFertilizer.edmx</DependentUpon>
+      <LastGenOutput>BuyFertilizer1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyMachine.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyMachine.edmx</DependentUpon>
+      <LastGenOutput>BuyMachine.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyMachine.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyMachine.edmx</DependentUpon>
+      <LastGenOutput>BuyMachine1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyPestiside.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyPestiside.edmx</DependentUpon>
+      <LastGenOutput>BuyPestiside.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuyPestiside.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuyPestiside.edmx</DependentUpon>
+      <LastGenOutput>BuyPestiside1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuySeed.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuySeed.edmx</DependentUpon>
+      <LastGenOutput>BuySeed.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuySeed.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuySeed.edmx</DependentUpon>
+      <LastGenOutput>BuySeed1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DbModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModel.edmx</DependentUpon>
+      <LastGenOutput>DbModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DbModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModel.edmx</DependentUpon>
+      <LastGenOutput>DbModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\DbModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DbModel.edmx.diagram">
+      <DependentUpon>DbModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\AddSeed.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AddSeed.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AddSeed.edmx.diagram">
+      <DependentUpon>AddSeed.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\AddFertilizer.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AddFertilizer.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AddFertilizer.edmx.diagram">
+      <DependentUpon>AddFertilizer.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\AddPestiside.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AddPestiside.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AddPestiside.edmx.diagram">
+      <DependentUpon>AddPestiside.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BuySeed.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuySeed.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BuySeed.edmx.diagram">
+      <DependentUpon>BuySeed.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BuyFertilizer.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuyFertilizer.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BuyFertilizer.edmx.diagram">
+      <DependentUpon>BuyFertilizer.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\AddMachine.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AddMachine.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AddMachine.edmx.diagram">
+      <DependentUpon>AddMachine.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BuyMachine.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuyMachine.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BuyMachine.edmx.diagram">
+      <DependentUpon>BuyMachine.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BuyPestiside.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuyPestiside.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BuyPestiside.edmx.diagram">
+      <DependentUpon>BuyPestiside.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\Login\Log_in.cshtml" />
+    <Content Include="Views\Home\Agriculture.cshtml" />
+    <Content Include="Views\Home\Cow.cshtml" />
+    <Content Include="Views\Home\DripIrrigation.cshtml" />
+    <Content Include="Views\Home\Goat.cshtml" />
+    <Content Include="Views\Home\Irrigation.cshtml" />
+    <Content Include="Views\Home\Poultry.cshtml" />
+    <Content Include="Views\Home\Sericulture.cshtml" />
+    <Content Include="Views\Home\Sheep.cshtml" />
+    <Content Include="Views\Home\SprinklerIrrigation.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\AdminSeed\_ViewStart.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\AddSeed.cshtml" />
+    <Content Include="Views\Admin\AddMachine.cshtml" />
+    <Content Include="Views\Admin\AddFertilizer.cshtml" />
+    <Content Include="Views\Admin\AddPestiside.cshtml" />
+    <Content Include="Views\AdminSeed\Create.cshtml" />
+    <Content Include="Views\AdminSeed\Delete.cshtml" />
+    <Content Include="Views\AdminSeed\Details.cshtml" />
+    <Content Include="Views\AdminSeed\Edit.cshtml" />
+    <Content Include="Views\AdminSeed\Index.cshtml" />
+    <Content Include="Views\Admin\_ViewStart.cshtml" />
+    <Content Include="Views\AdminMachine\Create.cshtml" />
+    <Content Include="Views\AdminMachine\Delete.cshtml" />
+    <Content Include="Views\AdminMachine\Details.cshtml" />
+    <Content Include="Views\AdminMachine\Edit.cshtml" />
+    <Content Include="Views\AdminMachine\Index.cshtml" />
+    <Content Include="Views\AdminMachine\_ViewStart.cshtml" />
+    <Content Include="Views\AdminFertilizer\Create.cshtml" />
+    <Content Include="Views\AdminFertilizer\Delete.cshtml" />
+    <Content Include="Views\AdminFertilizer\Details.cshtml" />
+    <Content Include="Views\AdminFertilizer\Edit.cshtml" />
+    <Content Include="Views\AdminFertilizer\Index.cshtml" />
+    <Content Include="Views\AdminFertilizer\_ViewStart.cshtml" />
+    <Content Include="Views\AdminPestiside\Create.cshtml" />
+    <Content Include="Views\AdminPestiside\Delete.cshtml" />
+    <Content Include="Views\AdminPestiside\Details.cshtml" />
+    <Content Include="Views\AdminPestiside\Edit.cshtml" />
+    <Content Include="Views\AdminPestiside\Index.cshtml" />
+    <Content Include="Views\AdminPestiside\_ViewStart.cshtml" />
+    <Content Include="Views\UserSeed\Details.cshtml" />
+    <Content Include="Views\UserSeed\Index.cshtml" />
+    <Content Include="Views\UserMachine\Details.cshtml" />
+    <Content Include="Views\UserMachine\Index.cshtml" />
+    <Content Include="Views\UserFertilizer\Details.cshtml" />
+    <Content Include="Views\UserFertilizer\Index.cshtml" />
+    <Content Include="Views\UserPestiside\Details.cshtml" />
+    <Content Include="Views\UserPestiside\Index.cshtml" />
+    <Content Include="Views\BuySeeds\Create.cshtml" />
+    <Content Include="Views\BuySeeds\Delete.cshtml" />
+    <Content Include="Views\BuySeeds\Details.cshtml" />
+    <Content Include="Views\BuySeeds\Edit.cshtml" />
+    <Content Include="Views\AdminSeedOrderView\Index.cshtml" />
+    <Content Include="Views\AdminSeedOrderView\_ViewStart.cshtml" />
+    <Content Include="Views\AdminSeedOrderView\Delete.cshtml" />
+    <Content Include="Views\BuyFertilizers\Create.cshtml" />
+    <Content Include="Views\BuyFertilizers\Delete.cshtml" />
+    <Content Include="Views\BuyFertilizers\Details.cshtml" />
+    <Content Include="Views\BuyFertilizers\Edit.cshtml" />
+    <Content Include="Views\AdminFertilizerOrderView\_ViewStart.cshtml" />
+    <Content Include="Views\AdminFertilizerOrderView\Delete.cshtml" />
+    <Content Include="Views\AdminFertilizerOrderView\Index.cshtml" />
+    <Content Include="Views\BuyMachines\Create.cshtml" />
+    <Content Include="Views\BuyMachines\Delete.cshtml" />
+    <Content Include="Views\BuyMachines\Details.cshtml" />
+    <Content Include="Views\BuyMachines\Edit.cshtml" />
+    <Content Include="Views\AdminMachineOrderView\Index.cshtml" />
+    <Content Include="Views\AdminMachineOrderView\Delete.cshtml" />
+    <Content Include="Views\AdminMachineOrderView\_ViewStart.cshtml" />
+    <Content Include="Views\BuyPestisides\Create.cshtml" />
+    <Content Include="Views\BuyPestisides\Delete.cshtml" />
+    <Content Include="Views\BuyPestisides\Details.cshtml" />
+    <Content Include="Views\BuyPestisides\Edit.cshtml" />
+    <Content Include="Views\AdminPestisideOrderView\Index.cshtml" />
+    <Content Include="Views\AdminPestisideOrderView\Delete.cshtml" />
+    <Content Include="Views\AdminPestisideOrderView\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51541</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51541/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

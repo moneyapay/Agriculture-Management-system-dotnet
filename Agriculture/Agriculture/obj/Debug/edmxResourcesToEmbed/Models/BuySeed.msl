@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AgricultureModel5StoreContainer" CdmEntityContainer="AgricultureEntities6">
+    <EntitySetMapping Name="BuySeeds">
+      <EntityTypeMapping TypeName="AgricultureModel5.BuySeed">
+        <MappingFragment StoreEntitySet="BuySeeds">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Seed_id" ColumnName="Seed_id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Phno" ColumnName="Phno" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin Operations</h2>
+
+<div class="container">
+    <h1 align="center">Seeds</h1>
+    <img src="~/Images/Ssss.jpg" height="200" width="200" class="img-circle" style="margin-left:450px;" /><br /><br />
+    <p style="margin-left:425px;">
+        <a href="@Url.Action("AddSeed","Admin")" class="btn btn-primary btn-lg">Add Seeds</a>
+         <a href="@Url.Action("Index","AdminSeed")" class="btn btn-primary btn-lg">View Seeds</a>
+    </p>
+</div><br /><br />
+
+<div class="container">
+    <h1 align="center">Machines</h1>
+    <img src="~/Images/mmm.jpg" height="200" width="200" class="img-circle" style="margin-left:450px;" /><br /><br />
+    <p style="margin-left:400px;">
+        <a href="@Url.Action("AddMachine","Admin")" class="btn btn-primary btn-lg">Add Machines</a>
+        <a href="@Url.Action("Index","AdminMachine")" class="btn btn-primary btn-lg">View Machines</a>
+    </p>
+</div><br /><br />
+
+<div class="container">
+    <h1 align="center">Fertilizers</h1>
+    <img src="~/Images/ffff.jpg" height="200" width="200" class="img-circle" style="margin-left:450px;" /><br /><br />
+    <p style="margin-left:400px;">
+        <a href="@Url.Action("AddFertilizer","Admin")" class="btn btn-primary btn-lg">Add Fertilizers</a>
+        <a href="@Url.Action("Index","AdminFertilizer")" class="btn btn-primary btn-lg">View Fertilizers</a>
+    </p>
+</div><br /><br />
+
+<div class="container">
+    <h1 align="center">Pestisides</h1>
+    <img src="~/Images/pppp.jpg" height="200" width="200" class="img-circle" style="margin-left:450px;" /><br /><br />
+    <p style="margin-left:400px;">
+        <a href="@Url.Action("AddPestiside","Admin")" class="btn btn-primary btn-lg">Add Pestisides</a>
+        <a href="@Url.Action("Index","AdminPestiside")" class="btn btn-primary btn-lg">View Pestisides</a>
+    </p>
+</div>
+
+
+

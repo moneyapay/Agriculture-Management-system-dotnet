@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Agriculture.Models.AddSeed>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 align="center" style="color:lawngreen;margin-top:50px;margin-bottom:40px;">Seeds Available To Buy</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Seed_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SeedName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yield)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seed_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SeedName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yield)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Buy", "Create","BuySeeds") |
+            @Html.ActionLink("Details", "Details", new { id=item.Seed_id }) |
+            
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgricultureModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AddSeed">
+    <Key>
+      <PropertyRef Name="Seed_id" />
+    </Key>
+    <Property Name="Seed_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SeedName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Season" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Yield" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AgricultureEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AddSeeds" EntityType="Self.AddSeed" />
+  </EntityContainer>
+</Schema>
